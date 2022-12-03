@@ -39,7 +39,7 @@ const drawScore = function () {
     ctx.textBaseline = "top";
 };
 
-let BestScoreTable = localStorage.getItem("score");
+let BestScoreTable = localStorage.getItem("score") ?? 0;
         
 const BestScore = function () {
     let BestScoreTable2 = localStorage.setItem("score", score);
